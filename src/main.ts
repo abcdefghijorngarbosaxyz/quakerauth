@@ -1,6 +1,12 @@
-import './assets/main.css'
+import './tailwind.css';
 
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp, type App as VueApp } from 'vue';
+import App from './App.vue';
 
-createApp(App).mount('#app')
+const main = (): void => {
+  const app: VueApp<Element> = createApp(App);
+
+  app.mount('#app');
+};
+
+main();

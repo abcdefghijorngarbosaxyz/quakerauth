@@ -11,12 +11,11 @@
     "version": "0.0.0"
   },
   "tauri": {
-    "systemTray": {
-      "iconPath": "icons/icon.png",
-      "iconAsTemplate": true
-    },
     "allowlist": {
-      "all": false
+      "all": false,
+      "window": {
+        "all": true
+      }
     },
     "bundle": {
       "active": true,
@@ -66,7 +65,7 @@
         "width": 320,
         "transparent": true,
         "decorations": false,
-        "visible": false
+        "hiddenTitle": true
       }
     ]
   }

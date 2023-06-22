@@ -11,6 +11,10 @@
     "version": "0.0.0"
   },
   "tauri": {
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": true
+    },
     "allowlist": {
       "all": false
     },
@@ -56,7 +60,7 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 640,
+        "height": 480,
         "resizable": false,
         "title": "Quakerauth",
         "width": 320,
